@@ -1,0 +1,241 @@
+
+/* light text: #fcf8f5;
+ * dark text: #241d13;
+ * teal: #3aa7c2;
+ * light background: #ddcdbf;
+ * less light: #dfbe95;
+ * medium: #c28d4b;
+ * darker: #744924;
+ * darkest: #3c311f;
+ */
+
+/*********************************** UNIVERSAL *******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+/********************************* HEADER & NAV ******************************/
+
+header {
+    background-color: #3aa7c2;
+    height: 36px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.header-content {
+    padding: 0.5em 0.8em;
+}
+
+nav {
+    background-color: #fcf8f5;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 36px;
+    z-index: 99;
+    text-align: center;
+}
+
+nav div {
+    text-align: center;
+    height: 100%;
+}
+
+nav div.left {
+    width: 40%;
+}
+
+nav div.right {
+    width: 40%;
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul a li {
+    display: inline-block;
+    padding: 2em 1.4em;
+    vertical-align: middle;
+    font-family: 'Candara', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+nav div.logo {
+    margin: 0 auto;
+    height: 100%;
+    width: 18%;
+}
+
+img.logo-img {
+    display: inline-block;
+    padding: 2.3% 0;
+    max-height: 86%;
+}
+
+nav div.nav-stuff {
+    display: inline-block;
+}
+
+a.nav-link {
+    color: #3aa7c2;
+}
+
+a.nav-link:hover {
+    color: #46c8e8;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav ul a li {
+        padding: 2em 0.8em;       
+        font-size: 1.0em;    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul a li {
+        display: block;
+        padding: 0.15em 0.8em;       
+        font-size: 1.0em;  
+    }
+
+    nav ul {
+        margin-top: 0.4em;
+    }
+
+    a.nav-link {
+        text-decoration: none;
+    }
+}
+
+/************************************ FOOTER *********************************/
+
+footer {
+    background-color: #c28d4b;
+    height: 4em;
+    padding: .5em 2em;
+    border-top: 3px solid #241d13;
+    border-bottom: 3px solid #241d13;
+}
+
+footer p {
+    line-height: 1.2em !important;
+}
+
+/****************************** GENERAL STYLESHEET ***************************/
+
+.page-container {
+    margin-top: 126px;
+    background-color:  #ddcdbf;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Courier New', monospace;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Candara', sans-serif;
+    color: #241d13;
+}
+
+body {
+    background-color: #ddcdbf;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************************** HELPFUL STYLES *****************************/
+
+.light {
+    color: #fcf8f5;
+}
+
+.dark {
+    color: #241d13;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-hor {
+    text-align: center;
+}
+
+.center-vert-parent {
+    display: table;
+    width: 100%;
+}
+
+.center-vert-child {
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.teal-button {
+    background-color: #3aa7c2;
+    color: #fcf8f5;
+    font-family: 'Candara', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0.6em;
+    margin: 0.8em;
+    display: inline-block;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.teal-button:hover {
+    background-color: #fcf8f5;
+    color: #3aa7c2;
+}
+
+.medium-brown {
+    background-color: #c28d4b;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.teal {
+    background-color: #3aa7c2;
+}
+
+.big-text {
+    font-size: 22px;
+}
+
+.huge-text {
+    font-size: 28px;
+}
